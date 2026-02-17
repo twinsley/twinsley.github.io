@@ -1,4 +1,305 @@
 <!DOCTYPE html>
-<html>
-<h1>This page is still under construction, it may be up eventually.</h1>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tim Winsley — Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Tim Winsley — software developer specializing in cloud, .NET, and full-stack development.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="#" class="nav-logo">tim<span>.</span>winsley</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-content">
+        <span class="hero-greeting">Hi, my name is</span>
+        <h1>Tim <span class="highlight">Winsley</span></h1>
+        <p class="hero-description">
+          Software developer with a focus on cloud infrastructure, .NET applications, and full-stack development.
+          I build tools and solutions on Azure, and enjoy tinkering with home automation on the side.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="https://github.com/twinsley" class="btn btn-outline" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title fade-in">About Me</h2>
+      <p class="section-subtitle fade-in">A bit about who I am and what I work with</p>
+      <div class="about-grid">
+        <div class="about-text fade-in">
+          <p>
+            I'm a Software Developer/Cloud Engineer/Devops Engineer who enjoys building practical tools and solving real problems with code.
+            My work spans cloud infrastructure on Microsoft Azure, desktop and web applications in C# and .NET,
+            and full-stack projects using modern frameworks.
+          </p>
+          <p>
+            I've completed the Cloud Resume Challenge on Azure — building out serverless APIs, infrastructure as code
+            with Terraform, and CI/CD pipelines. I've also built tooling for Azure AD B2C identity management, and I'm always
+            looking for ways to automate and improve the systems I rely on.
+          </p>
+          <p>
+            Outside of professional work, I enjoy home automation projects (Home Assistant is a favorite), and I like
+            to explore new technologies by building small, focused projects and putting them on GitHub.
+          </p>
+        </div>
+        <div class="skills-grid fade-in">
+          <div class="skill-category">
+            <h4>Languages</h4>
+            <ul>
+              <li>C#</li>
+              <li>JavaScript / TypeScript</li>
+              <li>HTML &amp; CSS</li>
+              <li>SQL</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h4>Cloud &amp; DevOps</h4>
+            <ul>
+              <li>Microsoft Azure</li>
+              <li>Terraform (HCL)</li>
+              <li>Azure Pipelines</li>
+              <li>Docker</li>
+              <li>Azure Functions</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h4>Frameworks</h4>
+            <ul>
+              <li>.NET / ASP.NET</li>
+              <li>WPF</li>
+              <li>Angular</li>
+              <li>Node.js</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h4>Tools &amp; Data</h4>
+            <ul>
+              <li>Git / GitHub</li>
+              <li>Microsoft Graph API</li>
+              <li>PostgreSQL</li>
+              <li>CosmosDB</li>
+              <li>VS Code</li>
+              <li>Visual Studio</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-title fade-in">Projects</h2>
+      <p class="section-subtitle fade-in">Things I've built</p>
+      <div class="projects-grid">
+
+        <!-- AAD B2C Extension Modifier -->
+        <div class="project-card fade-in">
+          <div class="project-card-header">
+            <span class="project-icon">🔐</span>
+            <div class="project-links">
+              <a href="https://github.com/twinsley/AADB2CExtensionModifier" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+          <h3><a href="https://github.com/twinsley/AADB2CExtensionModifier" target="_blank" rel="noopener">Azure AD B2C Extension Manager</a></h3>
+          <p>A WPF desktop application for managing Azure AD B2C users and their extension attributes. Features interactive browser authentication, user search, inline editing with change tracking, and automatic B2C extension app detection.</p>
+          <div class="project-tags">
+            <span>C#</span>
+            <span>.NET 8</span>
+            <span>WPF</span>
+            <span>Microsoft Graph</span>
+            <span>Azure AD B2C</span>
+          </div>
+        </div>
+
+        <!-- Cloud Resume -->
+        <div class="project-card fade-in">
+          <div class="project-card-header">
+            <span class="project-icon">☁️</span>
+            <div class="project-links">
+              <a href="https://github.com/twinsley/Cloud_Resume" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+          <h3><a href="https://github.com/twinsley/Cloud_Resume" target="_blank" rel="noopener">Cloud Resume</a></h3>
+          <p>An implementation of the Cloud Resume Challenge on Azure. Includes a static resume site, a serverless visitor counter API built with C# Azure Functions and Azure Table Storage, Terraform IaC, and CI/CD via Azure Pipelines.</p>
+          <div class="project-tags">
+            <span>HTML/CSS</span>
+            <span>C#</span>
+            <span>Terraform</span>
+            <span>Azure Functions</span>
+            <span>Azure Pipelines</span>
+          </div>
+        </div>
+
+        <!-- HA Monitor -->
+        <div class="project-card fade-in">
+          <div class="project-card-header">
+            <span class="project-icon">🏠</span>
+            <div class="project-links">
+              <a href="https://github.com/twinsley/HAMonitor" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+          <h3><a href="https://github.com/twinsley/HAMonitor" target="_blank" rel="noopener">Home Assistant Monitor</a></h3>
+          <p>A Dockerized C# console app that monitors Home Assistant availability via HTTP health checks. Automatically power-cycles the device using a smart switch when HA goes unresponsive, and sends email notifications on reboot events.</p>
+          <div class="project-tags">
+            <span>C#</span>
+            <span>Docker</span>
+            <span>Home Assistant</span>
+            <span>IoT</span>
+          </div>
+        </div>
+
+        <!-- Airport API -->
+        <div class="project-card fade-in">
+          <div class="project-card-header">
+            <span class="project-icon">✈️</span>
+            <div class="project-links">
+              <a href="https://github.com/twinsley/AirportAPI" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+          <h3><a href="https://github.com/twinsley/AirportAPI" target="_blank" rel="noopener">Airport API</a></h3>
+          <p>A C# web API and front-end application for airport data. Built with ASP.NET, featuring a JavaScript/HTML front-end with installable PWA support for mobile devices.</p>
+          <div class="project-tags">
+            <span>C#</span>
+            <span>ASP.NET</span>
+            <span>JavaScript</span>
+            <span>HTML/CSS</span>
+          </div>
+        </div>
+
+        <!-- Inventory Manager -->
+        <div class="project-card fade-in">
+          <div class="project-card-header">
+            <span class="project-icon">📦</span>
+            <div class="project-links">
+              <a href="https://github.com/twinsley/InventoryManager" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+          <h3><a href="https://github.com/twinsley/InventoryManager" target="_blank" rel="noopener">Inventory Manager</a></h3>
+          <p>A web-based inventory management system for tracking and organizing products with a clean UI.</p>
+          <div class="project-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog">
+    <div class="container">
+      <h2 class="section-title fade-in">Blog</h2>
+      <p class="section-subtitle fade-in">Thoughts, write-ups, and things I've learned</p>
+      <div class="blog-grid" id="blog-grid">
+        <!-- Blog cards rendered by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Post Overlay -->
+  <div class="blog-overlay" id="blog-overlay">
+    <div class="blog-post-full" id="blog-post-content"></div>
+  </div>
+
+  <!-- Resume Section -->
+  <section id="resume" class="resume-section">
+    <div class="container">
+      <div class="resume-container">
+        <h2 class="section-title fade-in">Resume</h2>
+        <p class="section-subtitle fade-in">Experience and qualifications at a glance</p>
+        <div class="resume-highlights fade-in">
+          <div class="highlight-item">
+            <div class="icon">☁️</div>
+            <h4>Cloud &amp; Infrastructure</h4>
+            <p>Azure services, Terraform IaC, serverless architectures, CI/CD pipelines</p>
+          </div>
+          <div class="highlight-item">
+            <div class="icon">💻</div>
+            <h4>Software Development</h4>
+            <p>C# / .NET, Java, TypeScript, full-stack web &amp; desktop applications</p>
+          </div>
+          <div class="highlight-item">
+            <div class="icon">🔑</div>
+            <h4>Identity &amp; Security</h4>
+            <p>Azure AD B2C, Microsoft Graph API, authentication &amp; authorization</p>
+          </div>
+          <div class="highlight-item">
+            <div class="icon">🐳</div>
+            <h4>DevOps &amp; Containers</h4>
+            <p>Docker, Azure Pipelines, Git workflows, automated deployments</p>
+          </div>
+        </div>
+        <div class="resume-buttons fade-in">
+          <a href="https://resume.twinsley.com" class="btn btn-primary" target="_blank" rel="noopener">View My Resume</a>
+          <a href="https://github.com/twinsley" class="btn btn-outline" target="_blank" rel="noopener">GitHub Profile ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-content">
+        <h2 class="section-title fade-in">Get In Touch</h2>
+        <p class="section-subtitle fade-in">Have a question or want to work together?</p>
+        <p class="fade-in">
+          I'm always open to discussing new projects, ideas, or opportunities. Feel free to reach out through any of the links below.
+        </p>
+        <div class="contact-links fade-in">
+          <a href="mailto:tim@winsley.dev" class="contact-link">
+            <span class="link-icon">✉</span>
+            tim@winsley.dev
+          </a>
+          <a href="https://github.com/twinsley" class="contact-link" target="_blank" rel="noopener">
+            <span class="link-icon">⟡</span>
+            GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Tim Winsley. Built with vanilla HTML, CSS &amp; JS.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
 </html>
