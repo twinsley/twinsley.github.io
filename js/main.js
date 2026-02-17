@@ -153,7 +153,10 @@ function renderBlogCards() {
   const grid = document.getElementById('blog-grid');
   if (!grid) return;
 
-  grid.innerHTML = blogPosts.map(post => `
+  // Sort by date, newest first
+  const sortedPosts = [...blogPosts].sort((a, b) => new Date(b.date) - new Date(a.date));
+
+  grid.innerHTML = sortedPosts.map(post => `
     <article class="blog-card fade-in" data-post-id="${post.id}">
       <div class="blog-card-content">
         <div class="blog-card-meta">
